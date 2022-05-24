@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <div class="header">
+            Result Management System
+            
+            <a><button  (click)="logout()" id="btn2">Logout</button></a>
+          
+          </div>
+          <br>
+          <div class="buttn1">
+            <!--Button -->
+            <div class="col-auto">
+                <a routerLink="/add"><input  type="button"  id="addbtn1" class="btn btn-info" value="Add Record" /></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="ff"><b>Total</b> {{user.length}}<b> students</b></div>
+          <br>
+          <form action="/result" method="POST">
+          <table border="1">
+              <thead>
+              <tr>
+                  <th>Roll No.</th>
+                  <th>Name</th>
+                  <th>Date of Birth</th>
+                  <th>Score</th>
+                  <th>Actions</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+
+                <tr *ngFor="let userdata of user">    
+                    <td>{{userdata.rollno}}</td>
+                    <td>{{userdata.name}}  </td>
+                    <td>{{userdata.dob}}</td>
+                    <td>{{userdata.score}}</td>
+                    <td>
+            <a routerLink="/edit/{{userdata.rollno}}" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a id="submit" class="btn border-shadow delete" (click)="deleteUser(userdata.rollno)">
+                <span class="text-gradient"><i class="fas fa-times" ></i></span>
+            </a>
+            <!-- <input type="button" (click)="deleteUser(userdata.rollno)" value="delete"> -->
+             </td>
+
+                </tr>    
+
+
+
+            
+           
+        </tbody>
+          </table>
+        </form>
+        
+</body>
+
+ 
+</html>

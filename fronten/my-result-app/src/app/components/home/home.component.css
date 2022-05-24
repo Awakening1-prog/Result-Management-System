@@ -1,0 +1,27 @@
+p
+{
+    margin:60px;
+    font-weight: bold;
+    margin-left: 140px;
+}
+#btn1
+{
+    background-color: deepskyblue;
+    width:130px;
+    border-radius: 6px;
+}
+#btn2
+{
+    background-color: deepskyblue;
+    width:130px;
+    border-radius: 6px;
+    margin-left:60px;
+}
+.ff{
+    
+	width:380px;
+	position:fixed;
+	top:25%;
+	left:calc(45% - 150px);
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Records</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header-->
+    <div class="header">
+        Result Management System
+        
+        <a routerLink="/"><button  id="btn2">Logout</button></a>
+      
+      </div>
+      <div class="container-fluid">
+        <div class="col-sm-6">
+            <!--form tag starting -->
+            <form class="form-horizontal" name="myform" >
+                <div class="form-group">
+                    <!--Name -->
+                    <label class="control-label col-sm-3" id="rollno" for="Name">Roll No</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="rollno" name="rollno" required #rollno>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!-- Email -->
+                    <label class="control-label col-sm-3" id="name" for="name">Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control"  required >
+                    </div>
+                </div>
+                <div class="buttn1">
+                    <!--Button -->
+                    <div class="col-auto">
+                        <a  ><input  type="button" (click)="getuser(rollno.value)"  id="bt" class="btn btn-info" value="Search" /></a>
+                        <input type="reset" id="bt1" class="btn btn-danger" value="Clear" />
+                    </div>
+                </div>
+            </form>
+            </div>
+            </div>
+            
+    
+</body>
+
+</html>

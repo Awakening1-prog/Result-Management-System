@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <Title>Add Records</Title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <!DOCTYPE html>
+<html>
+    <Title>Add Records</Title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <body>
+        <div class="header">
+            Result Management System
+            <a routerLink="/"><button  id="btn2">Logout</button></a></div>
+          
+          <br>
+          <a routerLink="/result">Back</a>
+          <br><br>
+          <h2>Add New Records</h2>
+          <div class="container-fluid">
+            <div class="col-sm-6">
+                <!--form tag starting -->
+                <form class="form-horizontal" name="myform" >
+                    <div class="form-group">
+                        <!--Name -->
+                        <label class="control-label col-sm-3" id="rollno" for="Name">Roll No</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="rollno" name="rollno" required [(ngModel)]="user.rollno">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- Email -->
+                        <label class="control-label col-sm-3" id="name" for="name">Name</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="name" name="name" required [(ngModel)]="user.name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--Website -->
+                        <label class="control-label col-sm-3" id="dob" for="dob">Date of Birth</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="dob" name="dob" required [(ngModel)]="user.dob">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--Image Link -->
+                        <label class="control-label col-sm-3" id="score" for="img">Score</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="score" name="score" required  [(ngModel)]="user.score" >
+                        </div>
+                    </div>
+                    <div class="buttn1">
+                        <!--Button -->
+                        <div class="col-auto">
+                            <input  type="button" (click)="saveUser()"  id="bt" class="btn btn-info" value="Submit" />
+                            <input type="reset" id="bt1" class="btn btn-danger" value="Clear" />
+                        </div>
+                    </div>
+                </form>  <!--Form tag ending--> 
+                </div>
+                </div>  
+
+    </body>
+</html> 

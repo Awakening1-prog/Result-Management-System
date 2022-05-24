@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        Result Management System
+        <button routerLink="/" id="btn2">Logout</button>
+    </div>
+    <br><br>
+    <a routerLink="/result">Back</a>
+          <br><br>
+    <h2>Update Records</h2>
+    <div class="container-fluid">
+        <div class="col-sm-6">
+            <!--form tag starting -->
+            <form class="form-horizontal" name="myform" >
+                <div class="form-group">
+                    <!--Name -->
+                    <label class="control-label col-sm-3" id="rollno" for="Name">Roll No</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="rollno" name="rollno" required [(ngModel)]="currentUser.rollno">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!-- Email -->
+                    <label class="control-label col-sm-3" id="name" for="Email">Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="name" name="name" required [(ngModel)]="currentUser.name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!--Website -->
+                    <label class="control-label col-sm-3" id="dob" for="dob">Date of Birth</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="dob" name="dob" required [(ngModel)]="currentUser.dob">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!--Image Link -->
+                    <label class="control-label col-sm-3" id="score" for="img">Score</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="score" name="score" [(ngModel)]="currentUser.score">
+                    </div>
+                </div>
+                <div class="buttn1">
+                    <!--Button -->
+                    <div class="col-auto">
+                        <input  type="button"  (click)="updateUser()"  id="bt" class="btn btn-info" value="Submit" />
+                        <input type="reset" id="bt1" class="btn btn-danger" value="Clear" />
+                    </div>
+                </div>
+            </form>  <!--Form tag ending--> 
+            </div>
+            </div>  
+</body>
+</html>

@@ -1,0 +1,49 @@
+.container-fluid
+{
+    margin: 50px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn2
+{
+    background-color: yellowgreen;
+    border-radius: 8px;
+     font-size: 50%;
+     margin-top: 5px;
+     margin-right: 2px;
+     color:black;
+    font-weight: bold;
+    float: right;
+}
+#abc1{
+    margin-left:219px;
+    width:200px;
+    border-radius:2px;
+    }
+    #abc22{
+        margin-left:233px;
+        width:200px;
+        border-radius:2px;
+        }
+        #addbtn2{
+            margin : 10px;
+            margin-left:35px;
+            color:black;
+            background-color: whitesmoke;
+        }
+
+        #bt1
+        {
+            margin-left: 30px;
+            color:black;
+            background-color:whitesmoke;
+        }
+        #bt
+        {
+            margin-left: 30px;
+        }
+        .buttn1
+        {
+            margin:30px;
+        }

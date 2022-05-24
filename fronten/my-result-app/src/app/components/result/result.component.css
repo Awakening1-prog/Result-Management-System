@@ -1,0 +1,44 @@
+#ff
+{
+    margin:20px;
+}
+#btn2
+{
+    background-color: yellowgreen;
+    border-radius: 8px;
+     font-size: 50%;
+     margin-top: 5px;
+     color:black;
+     margin-right: 2px;
+    font-weight: bold;
+    float: right;
+}
+
+table{
+    border-spacing: 1px;
+    margin-left:110px;
+   
+    width: 70%;
+    text-align: center;
+}
+#addbtn1{
+    float: right;
+    color:white;
+    background-color: deepskyblue;
+    margin-right:80px;
+}
+table th 
+{
+    
+    height: 30px;
+    text-align: center;
+    
+}
+table td 
+{
+    
+    height: 30px;
+    
+    text-align: center;
+    
+}
